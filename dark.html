@@ -1,0 +1,193 @@
+<!doctype html>
+<!-- SiPhi homepage demo, v2 dark. Draft for discussion; content taken from the public siphi.tech site. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SiPhi | Silicon photonics</title>
+<meta name="description" content="SiPhi builds heterogeneous silicon photonics and co-packaged optics for the AI interconnect.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#0A0C10}
+a{color:#A3ADBB;text-decoration:none}a:hover{color:#EEF1F5}
+@keyframes sp-travel{0%{left:0%;opacity:0}12%{opacity:1}88%{opacity:1}100%{left:calc(100% - 10px);opacity:0}}
+.sp-pulse{animation:sp-travel 2.6s linear infinite}
+.sp-delay{animation-delay:1.3s}
+@media (max-width:560px){.sp-label{display:none}}
+@media (max-width:640px){header{position:static !important}}
+@media (prefers-reduced-motion:reduce){.sp-pulse{animation:none}}
+</style>
+</head>
+<body>
+<div style="background: #0A0C10; color: #EEF1F5; font-family: Inter, system-ui, sans-serif">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(10, 12, 16, 0.86); backdrop-filter: blur(10px); border-bottom: 1px solid #1A1F26">
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="#top" aria-label="SiPhi home" style="display: flex; align-items: center; min-height: 44px">
+<svg viewBox="0 0 1360 1180" width="60" height="52" role="img" aria-label="SiPhi" style="display: block"><defs><filter id="navGlow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="16"></feGaussianBlur></filter></defs><g filter="url(#navGlow)" opacity="0.6" fill="none" stroke="#3B9EFF" stroke-linecap="round" stroke-linejoin="round"><path d="M 441.55 327.5 A 175 175 0 1 0 290 590 A 175 175 0 1 1 138.45 852.5" stroke-width="120"></path><line x1="639" y1="352" x2="639" y2="454" stroke-width="70"></line><line x1="639" y1="454" x2="639" y2="940" stroke-width="120"></line><path d="M 1043 90 L 1043 250 C 1043 375 1273 375 1273 500 L 1273 680 C 1273 805 1043 805 1043 930 L 1043 1090" stroke-width="120"></path><path d="M 1043 250 C 1043 375 813 375 813 500 L 813 680 C 813 805 1043 805 1043 930" stroke-width="120"></path></g><g fill="none" stroke="#F4F8FF" stroke-linecap="round" stroke-linejoin="round"><path d="M 441.55 327.5 A 175 175 0 1 0 290 590 A 175 175 0 1 1 138.45 852.5" stroke-width="64"></path><line x1="639" y1="352" x2="639" y2="454" stroke-width="28"></line><line x1="639" y1="454" x2="639" y2="940" stroke-width="64"></line><path d="M 1043 90 L 1043 250 C 1043 375 1273 375 1273 500 L 1273 680 C 1273 805 1043 805 1043 930 L 1043 1090" stroke-width="64"></path><path d="M 1043 250 C 1043 375 813 375 813 500 L 813 680 C 813 805 1043 805 1043 930" stroke-width="64"></path></g><rect x="583" y="240" width="112" height="112" rx="14" fill="#B8C2CF"></rect><line x1="1043" y1="420" x2="1043" y2="760" stroke="#B8C2CF" stroke-width="64" stroke-linecap="butt"></line><circle cx="1273" cy="590" r="44" fill="#3B9EFF"></circle></svg>
+</a>
+<nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px; font-size: 15px">
+<a href="#technology" style="display: inline-flex; align-items: center; min-height: 44px">Technology</a>
+<a href="#products" style="display: inline-flex; align-items: center; min-height: 44px">Products</a>
+<a href="#applications" style="display: inline-flex; align-items: center; min-height: 44px">Applications</a>
+<a href="https://www.siphi.tech/about" style="display: inline-flex; align-items: center; min-height: 44px">Team</a>
+<a href="mailto:info@siphi.tech" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #3B9EFF; color: #0A0C10; font-weight: 600">Contact us</a>
+</nav>
+</div>
+</header>
+
+<section id="top" style="padding: clamp(72px, 10vw, 136px) clamp(20px, 5vw, 64px) clamp(56px, 7vw, 96px); background-image: radial-gradient(#171C23 1px, transparent 1px); background-size: 28px 28px; scroll-margin-top: 80px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #3B9EFF">Silicon × Photon × AI</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(44px, 6.4vw, 92px); line-height: 1; letter-spacing: -0.035em; max-width: 14ch; text-wrap: balance">Photonic chipsets for the AI interconnect.</h1>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 21px); line-height: 1.6; color: #A3ADBB; max-width: 60ch; text-wrap: pretty">SiPhi builds heterogeneous silicon photonics and co-packaged optics: a photonic IC paired with its companion electronic IC, plus reference designs, to break the bandwidth bottleneck between XPUs.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="mailto:info@siphi.tech" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #3B9EFF; color: #0A0C10; font-weight: 600; font-size: 16px">Talk to us</a>
+<a href="#technology" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid #2A313B; color: #EEF1F5; font-weight: 500; font-size: 16px">Our technology</a>
+</div>
+
+<div aria-hidden="true" style="margin-top: 28px; border: 1px solid #222831; border-radius: 22px; background: #0D1015; padding: clamp(24px, 4vw, 48px) clamp(24px, 4vw, 48px) clamp(40px, 5vw, 60px)">
+<div style="display: flex; align-items: center">
+<div style="flex: none; width: clamp(76px, 10vw, 128px); aspect-ratio: 1; box-sizing: border-box; border-radius: 16px; background: #B8C2CF; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 500; font-size: clamp(12px, 1.2vw, 15px); letter-spacing: 0.12em; color: #0A0C10">XPU</div>
+<div style="flex: 1; min-width: 24px; height: 2px; background: #2A313B; position: relative">
+<div class="sp-pulse" style="position: absolute; top: -4px; left: 0; width: 10px; height: 10px; border-radius: 50%; background: #3B9EFF; box-shadow: 0 0 14px #3B9EFF"></div>
+<div class="sp-label" style="position: absolute; top: 16px; left: 0; right: 0; text-align: center; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8B95A3">electrical</div>
+</div>
+<div style="flex: none; width: clamp(110px, 15vw, 196px); aspect-ratio: 1.1; box-sizing: border-box; border: 1px solid #3B9EFF; border-radius: 16px; background: #11151B; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 10px">
+<svg viewBox="-590 -590 1180 1180" style="display: block; width: 52%; height: auto"><defs><filter id="heroGlow" x="-30%" y="-10%" width="160%" height="120%"><feGaussianBlur stdDeviation="20"></feGaussianBlur></filter><filter id="heroPhoton" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="24"></feGaussianBlur></filter></defs><g filter="url(#heroGlow)" opacity="0.7" fill="none" stroke="#3B9EFF" stroke-width="140" stroke-linecap="round" stroke-linejoin="round"><path d="M 0 -500 L 0 -340 C 0 -215 230 -215 230 -90 L 230 90 C 230 215 0 215 0 340 L 0 500"></path><path d="M 0 -340 C 0 -215 -230 -215 -230 -90 L -230 90 C -230 215 0 215 0 340"></path></g><g fill="none" stroke="#F4F8FF" stroke-width="72" stroke-linecap="round" stroke-linejoin="round"><path d="M 0 -500 L 0 -340 C 0 -215 230 -215 230 -90 L 230 90 C 230 215 0 215 0 340 L 0 500"></path><path d="M 0 -340 C 0 -215 -230 -215 -230 -90 L -230 90 C -230 215 0 215 0 340"></path></g><line x1="0" y1="-170" x2="0" y2="170" stroke="#B8C2CF" stroke-width="72" stroke-linecap="butt"></line><circle r="62" fill="#3B9EFF" filter="url(#heroPhoton)"><animateMotion dur="2.4s" repeatCount="indefinite" path="M 0 -500 L 0 -340 C 0 -215 230 -215 230 -90 L 230 90 C 230 215 0 215 0 340 L 0 500"></animateMotion></circle><circle r="42" fill="#3B9EFF"><animateMotion dur="2.4s" repeatCount="indefinite" path="M 0 -500 L 0 -340 C 0 -215 230 -215 230 -90 L 230 90 C 230 215 0 215 0 340 L 0 500"></animateMotion></circle><circle r="62" fill="#3B9EFF" filter="url(#heroPhoton)"><animateMotion dur="2.4s" repeatCount="indefinite" path="M 0 -500 L 0 -340 C 0 -215 -230 -215 -230 -90 L -230 90 C -230 215 0 215 0 340 L 0 500"></animateMotion></circle><circle r="42" fill="#3B9EFF"><animateMotion dur="2.4s" repeatCount="indefinite" path="M 0 -500 L 0 -340 C 0 -215 -230 -215 -230 -90 L -230 90 C -230 215 0 215 0 340 L 0 500"></animateMotion></circle></svg>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: clamp(10px, 1vw, 13px); letter-spacing: 0.12em; color: #EEF1F5">PIC + EIC</div>
+</div>
+<div style="flex: 1; min-width: 24px; height: 2px; background: #2A313B; position: relative">
+<div class="sp-pulse sp-delay" style="position: absolute; top: -4px; left: 0; width: 10px; height: 10px; border-radius: 50%; background: #3B9EFF; box-shadow: 0 0 14px #3B9EFF"></div>
+<div class="sp-label" style="position: absolute; top: 16px; left: 0; right: 0; text-align: center; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #8B95A3">optical</div>
+</div>
+<div style="flex: none; width: clamp(64px, 8vw, 104px); height: 44px; box-sizing: border-box; border: 1px solid #2A313B; border-radius: 999px; background: #11151B; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: clamp(10px, 1vw, 13px); letter-spacing: 0.12em; color: #EEF1F5">FIBER</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: clamp(72px, 10vw, 136px) clamp(20px, 5vw, 64px); border-top: 1px solid #1A1F26">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 24px 64px; align-items: baseline">
+<div style="flex: 1 1 200px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #8B95A3">The bottleneck</div>
+<p style="flex: 999 1 560px; min-width: 0; margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(28px, 3.2vw, 44px); line-height: 1.2; letter-spacing: -0.02em; color: #EEF1F5; text-wrap: pretty">AI now scales with how fast XPUs can talk to each other. SiPhi brings optics into the package, so bandwidth keeps up with compute.</p>
+</div>
+</section>
+
+<section id="technology" style="padding: clamp(72px, 10vw, 136px) clamp(20px, 5vw, 64px); border-top: 1px solid #1A1F26; scroll-margin-top: 80px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(40px, 5vw, 64px)">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #3B9EFF">Technology</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">Unique IP. Scale-up ready.</h2>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="display: flex; flex-wrap: wrap; gap: 12px 48px; padding: 28px 0; border-top: 1px solid #222831">
+<h3 style="margin: 0; flex: 1 1 320px; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.2; letter-spacing: -0.02em">Heterogeneous integrated photonics</h3>
+<p style="margin: 0; flex: 1 1 420px; font-size: 18px; line-height: 1.6; color: #A3ADBB">Advanced silicon photonics (SiPho) heterogeneous chipsets, built for scale-up interconnect.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 48px; padding: 28px 0; border-top: 1px solid #222831">
+<h3 style="margin: 0; flex: 1 1 320px; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.2; letter-spacing: -0.02em">Deep IP stack and PIC-EIC chipset</h3>
+<p style="margin: 0; flex: 1 1 420px; font-size: 18px; line-height: 1.6; color: #A3ADBB">A photonics integrated circuit (PIC) paired with a companion electronics IC (EIC).</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 48px; padding: 28px 0; border-top: 1px solid #222831; border-bottom: 1px solid #222831">
+<h3 style="margin: 0; flex: 1 1 320px; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.2; letter-spacing: -0.02em">Reference design and top-tier partnership</h3>
+<p style="margin: 0; flex: 1 1 420px; font-size: 18px; line-height: 1.6; color: #A3ADBB">Turnkey solutions spanning packaging, modules, and software and algorithms.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="products" style="padding: clamp(72px, 10vw, 136px) clamp(20px, 5vw, 64px); border-top: 1px solid #1A1F26; background: #0C0F13; scroll-margin-top: 80px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(40px, 5vw, 64px)">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #3B9EFF">Products</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em">Novel chipset. Smart turnkey.</h2>
+</div>
+<div style="border: 1px solid #2A313B; border-radius: 24px; padding: clamp(18px, 3vw, 32px); background: #0D1015; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8B95A3">Reference design · Turnkey</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.2; letter-spacing: -0.02em">Novel Reference Solutions</h3>
+</div>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #A3ADBB; border: 1px dashed #3A4350; border-radius: 8px; padding: 8px 12px">[Key metric vs. state of the art]</div>
+</div>
+<div style="border: 1px solid #2A313B; border-radius: 18px; padding: clamp(16px, 2.6vw, 28px); background: #11151B; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8B95A3">Chipset · Sub-system</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.2; letter-spacing: -0.02em">Smart Optoelectronics Chipset</h3>
+</div>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #A3ADBB; border: 1px dashed #3A4350; border-radius: 8px; padding: 8px 12px">[Key metric vs. state of the art]</div>
+</div>
+<div style="border: 1px solid #3B9EFF; border-radius: 14px; padding: clamp(16px, 2.4vw, 26px); background: #151A21; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8B95A3">Device · Component</div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.2; letter-spacing: -0.02em">Unique Photonics IC (PIC)</h3>
+</div>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; color: #A3ADBB; border: 1px dashed #3A4350; border-radius: 8px; padding: 8px 12px">[Key metric, e.g. pJ/bit or Tb/s per mm]</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="applications" style="padding: clamp(72px, 10vw, 136px) clamp(20px, 5vw, 64px); border-top: 1px solid #1A1F26; scroll-margin-top: 80px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(40px, 5vw, 64px)">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #3B9EFF">Applications</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em; max-width: 18ch; text-wrap: balance">From hyperscale data centers to sensing.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 0 32px">
+<div style="border-top: 1px solid #2A313B; padding: 24px 0; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.15; letter-spacing: -0.02em">AI datacenters</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #A3ADBB">Interconnect for XPU and GPU clusters.</p>
+</div>
+<div style="border-top: 1px solid #2A313B; padding: 24px 0; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.15; letter-spacing: -0.02em">Physical AI</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #A3ADBB">[One line on the Physical AI use case]</p>
+</div>
+<div style="border-top: 1px solid #2A313B; padding: 24px 0; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.15; letter-spacing: -0.02em">Sensing and emerging</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #A3ADBB">[One line on sensing and emerging uses]</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: clamp(96px, 12vw, 168px) clamp(20px, 5vw, 64px); border-top: 1px solid #1A1F26; background-image: radial-gradient(#171C23 1px, transparent 1px); background-size: 28px 28px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(48px, 8vw, 120px); line-height: 1; letter-spacing: -0.04em">Make Sci-Fi real.</h2>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 21px); line-height: 1.6; color: #A3ADBB; max-width: 52ch">Partner with SiPhi on next-generation optical interconnect for AI.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="mailto:info@siphi.tech" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #3B9EFF; color: #0A0C10; font-weight: 600; font-size: 16px">Contact us</a>
+<a href="https://www.linkedin.com/company/siphi" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid #2A313B; color: #EEF1F5; font-weight: 500; font-size: 16px">Follow on LinkedIn</a>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #1A1F26; padding: 40px clamp(20px, 5vw, 64px)">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 24px 48px">
+<div style="display: flex; align-items: center; gap: 14px">
+<svg viewBox="0 0 1360 1180" width="55" height="48" role="img" aria-label="SiPhi" style="display: block"><g fill="none" stroke="#EEF1F5" stroke-linecap="round" stroke-linejoin="round"><path d="M 441.55 327.5 A 175 175 0 1 0 290 590 A 175 175 0 1 1 138.45 852.5" stroke-width="64"></path><line x1="639" y1="352" x2="639" y2="454" stroke-width="28"></line><line x1="639" y1="454" x2="639" y2="940" stroke-width="64"></line><path d="M 1043 90 L 1043 250 C 1043 375 1273 375 1273 500 L 1273 680 C 1273 805 1043 805 1043 930 L 1043 1090" stroke-width="64"></path><path d="M 1043 250 C 1043 375 813 375 813 500 L 813 680 C 813 805 1043 805 1043 930" stroke-width="64"></path></g><rect x="583" y="240" width="112" height="112" rx="14" fill="#B8C2CF"></rect><line x1="1043" y1="420" x2="1043" y2="760" stroke="#B8C2CF" stroke-width="64" stroke-linecap="butt"></line><circle cx="1273" cy="590" r="44" fill="#3B9EFF"></circle></svg>
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8B95A3">Silicon × Photon × AI</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #A3ADBB">
+<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8B95A3">Locations</div>
+<div>Santa Clara, CA · Sacramento, CA · Singapore</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px">
+<a href="mailto:info@siphi.tech" style="display: inline-flex; align-items: center; min-height: 44px">info@siphi.tech</a>
+<a href="https://www.linkedin.com/company/siphi" style="display: inline-flex; align-items: center; min-height: 44px">LinkedIn</a>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #8B95A3"><span>© 2026 SiPhi Tech</span><a href="index.html">Light version</a></div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

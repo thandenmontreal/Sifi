@@ -14,3 +14,8 @@ Open either HTML file in a browser to view it. No build step is needed.
 
 - v4: hero eyebrow now reads "Φ = Photonics + Intelligence"; footer descriptor now reads "Silicon photonics for intelligence".
 - v3 (light) and v2 (dark): first versions with the SiΦ logo.
+
+## v5 (2026-11-09)
+- New SiPhi logo (original S, i with die connector, MZM Φ) in nav and footer of both pages
+- New favicon: white Φ on black
+- Tagline unified to "Photonics for Intelligence"
